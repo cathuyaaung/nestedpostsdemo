@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/views/style.css" rel="stylesheet">
+
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>  
+        <script src="/views/jqueryscripts.js"></script>  
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                        <h1>Username</h1>
+                        <input id="username" type="text" class="" placeholder="Username">
+                        <br>
+                        <select name="country" class="countries" id="countryId">
+                            <option value="">Select Country</option>
+                        </select>
+                        <select name="state" class="states" id="stateId">
+                            <option value="">Select State</option>
+                        </select>
+                        <select name="city" class="cities" id="cityId">
+                            <option value="">Select City</option>
+                        </select>
+                        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+                        <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+                        <br>
+                        <button id="login" type="button" class="btn-xs btn-primary">Login</button>    
+                        <div id="resultdiv"></div>        
+                </div>
+            </div>
+            <div class="row" id="postdiv">
+                <div class="col-md-12">
+                        <h1>Post</h1>
+                        <input id="message" type="text" class="">
+                        <button id="submitmessage" type="button" class="btn-xs btn-primary">Click Me!</button>            
+                </div>
+            </div>
+            <div class="row" id="messagesdiv">
+                <div class="col-md-12">
+                        <h1>Messages</h1>
+                    <div id="div1"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
